@@ -1,0 +1,10 @@
+div class="tabs-content"
+  table class="table table-striped table-hover table-condensed" id="list"
+    thead
+      tr
+        th class='header list-menu'= "testo"
+    tbody
+    	- @work_unit_employees.each do |work_unit_employee|
+	    	tr
+	    		td = work_unit_employee.name
+  		
